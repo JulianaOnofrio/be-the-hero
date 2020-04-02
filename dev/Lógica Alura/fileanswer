@@ -1,9 +1,0 @@
-$client = new \GuzzleHttp\Client();
-$resposta = $client->request('POST', 'https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=22b0eddd9ac24610bae94cbd164d7febe3186d66', [
-'multipart' => [
-   
-    [
-        'name'     => 'answer',
-        'contents' => fopen('answer.json', 'r')
-    ]
-]
